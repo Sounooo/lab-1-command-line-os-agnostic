@@ -15,7 +15,7 @@ Follow the instructions line-by-line.
 $ ls<ENTER>
 
 Copy and paste the output of ls below.
-----------
+---------- helloWorld  suhuanli
 Code  Desktop  Documents  Downloads  Movies  Music  Pictures  textfile.txt
 
 
@@ -25,19 +25,19 @@ Code  Desktop  Documents  Downloads  Movies  Music  Pictures  textfile.txt
 $ ls D<TAB>
 
 What happens?  Describe it below.
-----------
+---------- nothing happen
 Desktop/    Documents/  Downloads/
 
 
 ==========
 2b. Press <TAB> one more time.  Copy and paste the output below.
-----------
+---------- nothing happen
 rdrgeerwtger yg erwy brg
 
 
 ==========
 2c. Now press <ENTER>. Copy and paste the output below.
-----------
+---------- cannot access 'D': No such file or directory
 
 
 
@@ -47,7 +47,9 @@ rdrgeerwtger yg erwy brg
 $ ls -l Documents<ENTER>
 
 Copy and paste the first *two lines* of output below.
-----------
+---------- total 0
+drwxr-xr-x 1 root root 4096 Feb  2 20:11 helloWorld
+drwxr-xr-x 1 root root 4096 Feb  2 20:18 suhuanli
 
 
 
@@ -57,7 +59,8 @@ Copy and paste the first *two lines* of output below.
 $ ls -a Documents
 
 Copy and paste the first *two lines* of output below.
-----------
+---------- .   .bash_history  .motd_shown  .vscode-server  helloWorld
+..  .bashrc        .profile     .wget-hsts      suhuanli
 
 
 
@@ -67,7 +70,8 @@ Copy and paste the first *two lines* of output below.
 <UP><ENTER>
 
 What command was repeated?
-----------
+----------.   .bash_history  .motd_shown  .vscode-server  helloWorld
+..  .bashrc        .profile     .wget-hsts      suhuanli
 
 
 
@@ -77,7 +81,9 @@ What command was repeated?
 <UP><UP><UP><DOWN><ENTER>
 
 What command was repeated?
-----------
+----------total 0
+drwxr-xr-x 1 root root 4096 Feb  2 20:11 helloWorld
+drwxr-xr-x 1 root root 4096 Feb  2 20:18 suhuanli
 
 
 
@@ -87,7 +93,7 @@ What command was repeated?
 $ ls /b<TAB><ENTER>
 
 What is the result of pressing tab?
-----------
+---------- bin/  boot/ 
 
 
 
@@ -97,37 +103,37 @@ What is the result of pressing tab?
 $ ls doesnotexist
 
 Copy and paste the output below.
-----------
+---------- cannot access 'doesnotexist': No such file or directory
 
 
 
 ==========
 9.  What key do I press to go to the previous command?
-----------
+---------- Up key
 
 
 
 ==========
 10.  Name two flags that we used in this exercise.
-----------
+----------ls -l, ls -a
 
 
 
 ==========
 11.  What key do I use to attempt to autocomplete a command or a file name?
-----------
+----------Tab key
 
 
 
 ==========
 12.  What was the main command that we used throughout this exercise?
-----------
+---------- ls
 
 
 
 ==========
 13.  Name one argument that we passed to the command.
-----------
+----------ls
 
 
 
@@ -137,8 +143,13 @@ Copy and paste the output below.
 $ foo<ENTER>
 
 Copy and paste the output below.
-----------
+----------Command 'foo' not found, did you mean:
 
+  command 'fop' from deb fop (1:2.4-2)
+  command 'goo' from deb goo (0.155+ds-1)
+  command 'fio' from deb fio (3.16-1)
+
+Try: apt install <deb name>
 
 
 ==========
@@ -147,7 +158,13 @@ Copy and paste the output below.
 <UP><ENTER>
 
 Copy and paste the output below.
-----------
+----------Command 'foo' not found, did you mean:
+
+  command 'fop' from deb fop (1:2.4-2)
+  command 'goo' from deb goo (0.155+ds-1)
+  command 'fio' from deb fio (3.16-1)
+
+Try: apt install <deb name>
 
 
 
@@ -157,4 +174,7 @@ Copy and paste the output below.
 $ ls -a Desktop
 
 What is the command, flag, argument, and prompt?
-----------
+---------- Command is what we type in the prompt after a sign it could be a $ or others.
+Flag modify commands in very specific ways. Flags can be used to augment the base command. 
+Argument are what the command acts upon.
+Prompt a line in these slides prefixed with $ or other sign that means we're typing something in the prompt.
