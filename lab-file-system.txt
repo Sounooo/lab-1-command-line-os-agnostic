@@ -40,7 +40,7 @@ $ mkdir animals
 $ ls
 
 Copy and paste the output below.
-----------
+---------- animals
 
 
 
@@ -51,7 +51,7 @@ $ mkdir food
 $ ls
 
 Copy and paste the output below.
-----------
+---------- animals  food
 
 
 
@@ -62,7 +62,7 @@ $ mkdir -p foo/bar/baz/qux
 $ ls
 
 Copy and paste the output below.
-----------
+---------- animals  foo  food
 
 
 
@@ -73,7 +73,7 @@ $ cd foo/bar/baz/qux
 $ pwd
 
 Copy and paste the output below.
-----------
+---------- /root/mtec1003/foo/bar/baz/qux
 
 
 
@@ -84,7 +84,7 @@ $ cd ../..
 $ pwd
 
 Copy and paste the output below.
-----------
+---------- /root/mtec1003/foo/bar
 
 
 
@@ -95,7 +95,7 @@ $ cd -
 $ pwd
 
 Copy and paste the output below.
-----------
+---------- /root/mtec1003/foo/bar/baz/qux
 
 
  
@@ -106,7 +106,7 @@ $ cd ../../../..
 $ pwd
 
 Copy and paste the output below.
-----------
+---------- /root/mtec1003
 
 
 
@@ -118,7 +118,9 @@ $ rmdir animals
 $ ls -l
 
 Copy and paste the first two lines from the output into the space below.
-----------
+---------- total 0
+drwxr-xr-x 1 root root 4096 Feb 23 19:35 foo
+drwxr-xr-x 1 root root 4096 Feb 23 19:35 food
 
 
 
@@ -129,7 +131,7 @@ $ cd ~
 $ pwd
 
 Copy and paste the output into the space below.
-----------
+---------- /root
 
 
 
@@ -140,7 +142,7 @@ $ cd /mnt (if your on linux) or cd /Volumes (if your on a mac)
 $ pwd
 
 Copy and paste the output into the space below.
-----------
+---------- /mnt
 
 
 
@@ -151,7 +153,7 @@ $ cd /unknown_folder
 $ pwd
 
 Copy and paste the output into the space below.
-----------
+----------  cd: /unknown_folder: No such file or directory
 
 
 
@@ -162,13 +164,13 @@ $ cd ~/mtec1003
 $ pwd
 
 Copy and paste the output into the space below.
-----------
+---------- /root/mtec1003
 
 
 
 ==========
 16a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
-----------
+---------- cd ~/mtec1003
 
 
 
@@ -191,7 +193,7 @@ strawbery
 lemon
 
 Use only one command to make all of these new directories.  Write what command you used below:
-----------
+---------- mkdir -p lemon/strawbery/orange/pineapple
 
 
 
@@ -199,7 +201,7 @@ Use only one command to make all of these new directories.  Write what command y
 18. Make another directory called aardvark.  
 
 Write the command you used to create the directory below:
-----------
+----------mkdir aardvark
 
 
 
@@ -207,7 +209,7 @@ Write the command you used to create the directory below:
 19. List the files and directories in the current directory using the long format.  
 
 What is the modified date of the aardvark directory?
-----------
+---------- drwxr-xr-x 1 root root 4096 Feb 23 20:08 aardvark
 
 
 
@@ -219,15 +221,14 @@ What is the modified date of the aardvark directory?
 * baz should be inside bar
 
 What command did you use?
-----------
-
+---------- mkdir -p foo/bar/baz
 
 
 ==========
 21. Change your directory so that you're in the inner most directory (baz)
 
 What command did you use?
-----------
+---------- cd baz
 
 
 
@@ -235,45 +236,44 @@ What command did you use?
 22. Change your directory so that you're two directories up (foo)
 
 What command did you use?
-----------
+---------- cd ..
 
 
 ==========
 23. What command is used to delete empty directories?
-----------
+---------- rmdir
 
 
 
 ==========
 24. What command is used to print out your current working directory?
-----------
+---------- .
 
 
 
 ==========
 25. What flag do I pass to ls to print out all files?
-----------
-
+----------$ ls -tl Desktop
 
 
 ==========
 26. What's the shortcut for home directory?
-----------
+---------- cd ~
 
 
 
 ==========
 27. What's a pathname?
-----------
+----------As the name implies it's the name of the path. It's a location in the file system.
 
 
 
 ==========
 28. What's a directory?
-----------
+---------- This is synonymous with folder this a construct the filesystem uses to organize files.
 
 
 
 ==========
 29. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
-----------
+---------- Absolute paths are paths expressed as starting from the root the root in this case being the initial /
