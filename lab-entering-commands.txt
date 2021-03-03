@@ -19,7 +19,7 @@ Copy and paste the output of ls below.
 Code  Desktop  Documents  Downloads  Movies  Music  Pictures  textfile.txt
 
 
-==========
+=========
 2a. Type: 
 
 $ ls D<TAB>
