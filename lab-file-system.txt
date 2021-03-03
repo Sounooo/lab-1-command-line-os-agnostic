@@ -1,5 +1,5 @@
 Lab - Navigating the File System
-==========
+=========
 Follow the instructions line-by-line.  
 
 * Type in the commands as is, but ignore the beginning prompt.  
